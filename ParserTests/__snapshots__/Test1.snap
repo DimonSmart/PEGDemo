@@ -1,0 +1,1 @@
+﻿( Card="Visa" OR Card="MasterCard" ) AND Amount > 100

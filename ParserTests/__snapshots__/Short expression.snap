@@ -1,0 +1,65 @@
+﻿[
+  {
+    "Kind": "Amount",
+    "Span": {
+      "Source": "Amount = 100",
+      "Position": {
+        "Absolute": 0,
+        "Line": 1,
+        "Column": 1,
+        "HasValue": true
+      },
+      "Length": 6,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 0,
+      "Line": 1,
+      "Column": 1,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Equal",
+    "Span": {
+      "Source": "Amount = 100",
+      "Position": {
+        "Absolute": 7,
+        "Line": 1,
+        "Column": 8,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 7,
+      "Line": 1,
+      "Column": 8,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Number",
+    "Span": {
+      "Source": "Amount = 100",
+      "Position": {
+        "Absolute": 9,
+        "Line": 1,
+        "Column": 10,
+        "HasValue": true
+      },
+      "Length": 3,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 9,
+      "Line": 1,
+      "Column": 10,
+      "HasValue": true
+    },
+    "HasValue": true
+  }
+]

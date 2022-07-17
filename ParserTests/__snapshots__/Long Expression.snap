@@ -1,0 +1,401 @@
+﻿[
+  {
+    "Kind": "LParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 0,
+        "Line": 1,
+        "Column": 1,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 0,
+      "Line": 1,
+      "Column": 1,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "LParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 1,
+        "Line": 1,
+        "Column": 2,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 1,
+      "Line": 1,
+      "Column": 2,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Card",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 2,
+        "Line": 1,
+        "Column": 3,
+        "HasValue": true
+      },
+      "Length": 4,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 2,
+      "Line": 1,
+      "Column": 3,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Equal",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 7,
+        "Line": 1,
+        "Column": 8,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 7,
+      "Line": 1,
+      "Column": 8,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "String",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 9,
+        "Line": 1,
+        "Column": 10,
+        "HasValue": true
+      },
+      "Length": 6,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 9,
+      "Line": 1,
+      "Column": 10,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "RParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 15,
+        "Line": 1,
+        "Column": 16,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 15,
+      "Line": 1,
+      "Column": 16,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Or",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 17,
+        "Line": 1,
+        "Column": 18,
+        "HasValue": true
+      },
+      "Length": 2,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 17,
+      "Line": 1,
+      "Column": 18,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "LParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 20,
+        "Line": 1,
+        "Column": 21,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 20,
+      "Line": 1,
+      "Column": 21,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Card",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 21,
+        "Line": 1,
+        "Column": 22,
+        "HasValue": true
+      },
+      "Length": 4,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 21,
+      "Line": 1,
+      "Column": 22,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Equal",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 26,
+        "Line": 1,
+        "Column": 27,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 26,
+      "Line": 1,
+      "Column": 27,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "String",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 28,
+        "Line": 1,
+        "Column": 29,
+        "HasValue": true
+      },
+      "Length": 12,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 28,
+      "Line": 1,
+      "Column": 29,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "RParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 40,
+        "Line": 1,
+        "Column": 41,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 40,
+      "Line": 1,
+      "Column": 41,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "RParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 41,
+        "Line": 1,
+        "Column": 42,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 41,
+      "Line": 1,
+      "Column": 42,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "And",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 43,
+        "Line": 1,
+        "Column": 44,
+        "HasValue": true
+      },
+      "Length": 3,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 43,
+      "Line": 1,
+      "Column": 44,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "LParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 47,
+        "Line": 1,
+        "Column": 48,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 47,
+      "Line": 1,
+      "Column": 48,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Amount",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 48,
+        "Line": 1,
+        "Column": 49,
+        "HasValue": true
+      },
+      "Length": 6,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 48,
+      "Line": 1,
+      "Column": 49,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Greater",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 55,
+        "Line": 1,
+        "Column": 56,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 55,
+      "Line": 1,
+      "Column": 56,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "Number",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 57,
+        "Line": 1,
+        "Column": 58,
+        "HasValue": true
+      },
+      "Length": 3,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 57,
+      "Line": 1,
+      "Column": 58,
+      "HasValue": true
+    },
+    "HasValue": true
+  },
+  {
+    "Kind": "RParen",
+    "Span": {
+      "Source": "((Card = \"Visa\") OR (Card = \"MasterCard\")) AND (Amount > 100)",
+      "Position": {
+        "Absolute": 60,
+        "Line": 1,
+        "Column": 61,
+        "HasValue": true
+      },
+      "Length": 1,
+      "IsAtEnd": false
+    },
+    "Position": {
+      "Absolute": 60,
+      "Line": 1,
+      "Column": 61,
+      "HasValue": true
+    },
+    "HasValue": true
+  }
+]
