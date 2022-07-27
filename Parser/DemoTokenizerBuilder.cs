@@ -16,6 +16,7 @@ public static class DemoTokenizerBuilder
             .Match(Span.EqualToIgnoreCase("Amount"), DemoToken.Amount)
             .Match(Span.EqualToIgnoreCase("="), DemoToken.Equal)
             .Match(Span.EqualToIgnoreCase(">"), DemoToken.Greater)
+            .Match(Span.EqualToIgnoreCase("<"), DemoToken.Less)
             .Match(Character.EqualTo('('), DemoToken.LParen)
             .Match(Character.EqualTo(')'), DemoToken.RParen)
             .Match(Numerics.Decimal, DemoToken.Number)
