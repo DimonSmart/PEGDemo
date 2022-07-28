@@ -3,7 +3,7 @@ using Parser.Expressions;
 
 namespace Parser.Visitors;
 
-public class FunctionWhereBuilderVisitor : IVisitor
+public class ConditionFunctionBuilderVisitor : IVisitor
 {
     private readonly ParameterExpression AmountParameter = Expression.Parameter(typeof(int), "Amount");
     private readonly ParameterExpression CardNameParameter = Expression.Parameter(typeof(string), "CardName");
@@ -12,7 +12,25 @@ public class FunctionWhereBuilderVisitor : IVisitor
 
     public void Visit(BinaryDemoExpression binaryDemoExpression)
     {
-        throw new NotImplementedException();
+        binaryDemoExpression.Left.AcceptVisitor(this);
+        binaryDemoExpression.Right.AcceptVisitor(this);
+
+        if (ExpressionsStack.Count < 2)
+            throw new ArgumentException("Invalid expression tree state");
+
+        var leftArg = ExpressionsStack.Pop();
+        var rightArg = ExpressionsStack.Pop();
+        switch (binaryDemoExpression.Operator)
+        {
+            case LogicalOperator.And:
+                ExpressionsStack.Push(Expression.And(leftArg, rightArg));
+                break;
+            case LogicalOperator.Or:
+                ExpressionsStack.Push(Expression.Or(leftArg, rightArg));
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
     }
 
     public void Visit(CheckAmountExpression checkAmountExpression)

@@ -3,7 +3,7 @@ using Parser.Visitors;
 
 namespace ParserTests;
 
-public class FunctionWhereBuilderVisitorTests
+public class VisitorsTests
 {
     [Theory]
     [InlineData(@"Card = ""Visa""", "Visa", 0, true)]
@@ -14,14 +14,20 @@ public class FunctionWhereBuilderVisitorTests
     [InlineData(@"Amount > 5", "MasterCard", 5, false)]
     [InlineData(@"Amount < 5", "MasterCard", 6, false)]
     [InlineData(@"Amount < 5", "MasterCard", 4, true)]
-    
-    public void PrettyPrintTest(string expression, string cardName, int amount, bool expectedResult)
+    [InlineData(@"(Amount > 5) AND (Amount < 10)", "", 6, true)]
+    [InlineData(@"(Amount > 5) AND (Amount < 10)", "", 5, false)]
+    [InlineData(@"(Amount > 5) AND (Amount < 10)", "", 10, false)]
+    public void CalculationTest(string expression, string cardName, int amount, bool expectedResult)
     {
         Assert.True(DemoParser.TryParse(DemoTokenizerBuilder.Build().Tokenize(expression), out var expr, out _, out _));
-        var visitor = new FunctionWhereBuilderVisitor();
+
+        var visitor = new ConditionFunctionBuilderVisitor();
         expr!.AcceptVisitor(visitor);
         var whereFunction = visitor.GetResult();
-
         Assert.Equal(expectedResult, whereFunction(cardName, amount));
+
+        var interpreterVisitor = new ExpressionInterpreterVisitor(cardName, amount);
+        expr.AcceptVisitor(interpreterVisitor);
+        Assert.Equal(expectedResult, interpreterVisitor.GetResult());
     }
 }
