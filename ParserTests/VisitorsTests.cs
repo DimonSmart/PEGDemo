@@ -29,5 +29,6 @@ public class VisitorsTests
         var interpreterVisitor = new ExpressionInterpreterVisitor(cardName, amount);
         expr.AcceptVisitor(interpreterVisitor);
         Assert.Equal(expectedResult, interpreterVisitor.GetResult());
+
     }
 }
