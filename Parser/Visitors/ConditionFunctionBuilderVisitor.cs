@@ -60,12 +60,12 @@ public class ConditionFunctionBuilderVisitor : IVisitor
             Expression.Equal(CardNameParameter, Expression.Constant(checkCardNameExpression.Value)));
     }
 
-    public Func<string, int, bool> GetResult()
+    public Expression<Func<string, int, bool>> GetExpression()
     {
         if (ExpressionsStack.Count != 1)
             throw new ArgumentException("Invalid expression tree");
 
-        return Expression.Lambda<Func<string, int, bool>>(ExpressionsStack.Pop(), CardNameParameter, AmountParameter)
-            .Compile();
+        return Expression.Lambda<Func<string, int, bool>>
+            (ExpressionsStack.Pop(), CardNameParameter, AmountParameter);
     }
 }
