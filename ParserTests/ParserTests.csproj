@@ -30,11 +30,18 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\PEGDemo\ExpressionSplicer\ExpressionSplicer.csproj" />
       <ProjectReference Include="..\Parser\Parser.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="__snapshots__" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="DBStubData.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

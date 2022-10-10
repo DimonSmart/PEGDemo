@@ -23,7 +23,7 @@ public class VisitorsTests
 
         var visitor = new ConditionFunctionBuilderVisitor();
         expr!.AcceptVisitor(visitor);
-        var whereFunction = visitor.GetResult();
+        var whereFunction = visitor.GetExpression().Compile();
         Assert.Equal(expectedResult, whereFunction(cardName, amount));
 
         var interpreterVisitor = new ExpressionInterpreterVisitor(cardName, amount);
