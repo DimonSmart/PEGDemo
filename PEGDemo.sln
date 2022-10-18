@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser", "Parser\Parser.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParserTests", "ParserTests\ParserTests.csproj", "{F9079DE0-C886-4F13-90EA-1EDCDDF2B218}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionSplicer", "..\PEGDemo\ExpressionSplicer\ExpressionSplicer.csproj", "{BA5BE4B6-7107-4D0E-AA68-54789B7A82A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionSplicer", "ExpressionSplicer\ExpressionSplicer.csproj", "{BA5BE4B6-7107-4D0E-AA68-54789B7A82A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
